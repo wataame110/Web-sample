@@ -1,0 +1,102 @@
+<!doctype html>
+<html id="top">
+<head>
+<meta charset="UTF-8">
+<title>portfolio</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+				
+
+	<div id="wrap">
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#top">Top</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Work</a></li>
+			</ul>
+		</nav>
+	</header>
+	</div>
+	<h1><img src="images/re.png" width="600" height="63" alt="Reina Tadauchi"></h1>
+		<div class="About">
+		<h2 id="about">About</h2>
+		<h3>Reina Tadauchi</h3><br>
+			<img src="images/reina.jpg" width="200" height="200" alt="写真">
+		<p>1999/3/25<br>O型<br>牡羊座<br>卯年<br>休日はドラム叩いてます。<br>生まれ変わったらラムちゃんになりたい。</p>
+			</div>
+		<h4 id="work">Work</h4>
+		<div class="reina">
+	<section>
+		<a href="neru.html"><p><img src="images/nerune.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="real.html"><p><img src="images/riaru.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="pakkeji.html"><p><img src="images/hoshimini.jpg" width="300" height="300" alt="作品"></p></a>
+	</section>
+	<section>
+		<a href="jikan.html"><p><img src="images/rogo.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="karenda.html"><p><img src="images/karenda.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="nenga.html"><p><img src="images/nenga.jpg" width="300" height="300" alt="作品"></p></a>
+	</section>
+	<section>
+		<a href="sapoka.html"><p><img src="images/sapoka.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="kumasan.html"><p><img src="images/kuma.jpg" width="300" height="300" alt="作品"></p></a>
+		<a href="kutu.html"><p><img src="images/kutu.jpg" width="300" height="300" alt="作品"></p></a>
+	</section>
+	</div>
+	<div class="douga">
+	<h5>Movie</h5>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/5iD1_6PQIl4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	<footer>
+		<address><small>　&copy; 2018 Tadauchi Reina All rights reserved.</small></address>
+	</footer>
+	<div class="glitch-img" style="background-image: url('images/IMG_2978.JPG')"></div>
+
+	 <script
+	    src="https://code.jquery.com/jquery-2.2.4.min.js"
+	    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	    crossorigin="anonymous">
+    </script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+
+    <!-- include plugin src -->
+    <script src="mgGlitch-master/src/mgGlitch.min.js"></script>
+    
+    <!-- active plugin -->
+    <script>
+	$( function() {
+		$( ".glitch-img" ).mgGlitch({
+			destroy : false, // set 'true' to stop the plugin
+                        glitch: true, // set 'false' to stop glitching
+                        scale: true, // set 'false' to stop scaling
+                        blend : true, // set 'false' to stop glitch blending
+                        blendModeType : 'hue', // select blend mode type
+                        glitch1TimeMin : 600, // set min time for glitch 1 elem
+                        glitch1TimeMax : 900, // set max time for glitch 1 elem
+                        glitch2TimeMin : 10, // set min time for glitch 2 elem
+                        glitch2TimeMax : 115, // set max time for glitch 2 elem
+                        zIndexStart : 1, // because of absolute position, set z-index base value
+		});
+	});
+	</script>
+<script>
+        $(function() {
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+                // スクロールの速度
+                var speed = 400; // ミリ秒で記述
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
