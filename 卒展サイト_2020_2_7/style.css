@@ -1,0 +1,239 @@
+@charaset="utf-8";
+
+body {
+    background: #34b496;
+}
+
+/*後ろの"WEB CREATOR"の設定*/
+.background-txt {
+    position:fixed;
+    top: -100px;
+    left: -50px;
+    font-family: "Arial Black";
+    color: #e40067;
+    font-size: 400px;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    z-index: 1;
+    transition: 1s;
+/*    background: blue;*/
+}
+
+
+/*headerの設定*/
+#top-center {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1000px;
+    margin: 200px 0;
+    font-size: 50px;
+    text-align: center;
+    z-index: 2;
+}
+
+#top-center h1 {
+    font-size: 300px;
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+    letter-spacing: 30px;
+    margin-bottom: 50px;
+}
+
+#top-center p {
+    font-size: 100px;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 1200px;
+}
+
+/*Room No.318の設定*/
+#room {
+    position: relative;
+    margin: 100px 0;
+}
+
+.room-ph {
+    background: url(img/room318.jpeg) no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 640px;
+}
+
+.room-txt {
+    position: absolute;
+    bottom: -150px;
+    right: 100px;
+    width: 600px;
+    height: 200px;
+    padding: 20px 25px 10px;
+    background: #fff33f;
+    font-family: "M PLUS 1p";
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.room-txt:after {
+    position: absolute;
+    content: '';
+    right: -1px;
+    bottom: -1px;
+    border-width: 40px 40px 0 0;
+    border-style: solid;
+    border-color: #ffdb88 #34b496 #ffdb88;
+    box-shadow: -1px 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/*portforioの設定*/
+#portfolio {
+    position: relative;
+    top: 300px;
+    margin: 100px 50px;
+    padding: 0 100px;
+}
+.portfolio-wrap {
+    max-width: 1750px;
+    margin: 0 auto;
+}
+.portfolio-site {
+    position: relative;
+    top: 100px;
+    margin-top: -300px;
+}
+.portfolio-site:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.portfolio-site:first-child {
+    margin-top: 0;
+}
+.thumbnail-title {
+    position: relative;
+    font-family: "Arial";
+    font-size: 50px;
+    top: 20px;
+    left: 10px;
+    color: #5a5958;
+}
+.portfolio-link img {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.thumbnail-txt {
+    position: relative;
+    bottom: 50px;
+    left: 385px;
+    width: 420px;
+    height: 180px;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 20px 25px 10px;
+    background: #fff33f;
+    font-family: "M PLUS 1p";;
+}
+
+.thumbnail-txt:after {
+    position: absolute;
+    content: '';
+    right: -1px;
+    bottom: -1px;
+    border-width: 25px 25px 0 0;
+    border-style: solid;
+    border-color: #ffdb88 #34b496 #ffdb88;
+    box-shadow: -1px 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.txt-name {
+    position: relative;
+    left: 300px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Room No.318とPortfolioのタイトル共通*/
+.contents-title {
+    position: absolute;
+    top: -110px;
+    left: 100px;
+    font-size: 120px;
+    font-family: "Arial Black";
+}
+
+/*リストの設定*/
+ul li {
+    list-style: none;
+}
+
+/*jsの設定*/
+.obj{
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translate(0,100px);
+}
+
+.obj.show{
+    opacity: 1;
+    transform: none;
+}
+
+.obj--lr {
+    transform: translate(-100px, 0);
+}
+
+.obj--rl {
+    transform: translate(100px, 0);
+}
+
+.obj--up {
+    transform: translate(0, 100px);
+}
+
+.obj--down {
+    transform: translate(0, -100px);
+}
+
+.obj--scaleUp {
+    transform: scale(.5);
+}
+
+.obj--scaleDown {
+    transform: scale(1.5);
+}
+
+.obj--rotateL {
+    transform: rotate(180deg);
+}
+
+.obj--rotateR {
+    transform: rotate(-180deg);
+}
+
+
+/*幅が1900px以下の時*/
+@media screen and (max-width:1900px) {
+    .portfolio-site {
+        margin: 50px auto;
+    }
+    
+/*
+    .portfolio-link{
+        background: blue;
+    }
+*/
+
+    .portfolio-site:nth-child(even) {
+    display: block;
+}
+
+
+}

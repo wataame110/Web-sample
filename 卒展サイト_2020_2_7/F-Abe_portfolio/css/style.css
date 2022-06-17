@@ -1,0 +1,698 @@
+@charaset="UTF-8";
+
+body {
+  font-family: 'Cabin Sketch', "Sawarabi Mincho", cursive;
+  background: url(../img/background_top.png) no-repeat fixed;
+}
+
+
+/*
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+*/
+
+header {
+  width: 100%;
+  height: 600px;
+  background: url(../img/header_back.png) no-repeat;
+  background-position: top;
+  margin: 0 auto 200px;
+}
+
+.site_name {
+  font-size: 90px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu ul {
+  width: 60%;
+  height: 260px;
+  margin: 200px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li:nth-child(2n+1) {
+  position: relative;
+  top: 100px;
+}
+
+/*メニューボタンの装飾についての設定*/
+
+.Top_btn {
+  width: 80px;
+  height: 160px;
+  background: url(../img/Top_mono.png) no-repeat;
+  background-size: contain;
+}
+
+.Top_btn a {
+  width: 80px;
+  height: 160px;
+  display: block;
+  /*
+    background-size: contain ;
+    background: url(img/Top_mono.png) no-repeat ;
+*/
+}
+
+.Top_btn a:hover {
+  background: url(../img/Top_color.png) no-repeat;
+  background-size: contain;
+}
+
+.News_btn {
+  width: 80px;
+  height: 160px;
+  background: url(../img/News_mono.png) no-repeat;
+  background-size: contain;
+}
+
+.News_btn a {
+  width: 80px;
+  height: 160px;
+  /*
+     background-size: contain ;
+    background: url(img/News_mono.png) no-repeat ;
+*/
+  display: block;
+}
+
+.News_btn a:hover {
+  background: url(../img/News_color.png) no-repeat;
+  background-size: contain;
+}
+
+.About_btn {
+  width: 80px;
+  height: 160px;
+  background: url(../img/About_mono.png) no-repeat;
+  background-size: contain;
+}
+
+.About_btn a {
+  width: 80px;
+  height: 160px;
+  /*
+    background: url(img/About_mono.png) no-repeat ;
+    background-size: contain ;
+*/
+  display: block;
+}
+
+.About_btn a:hover {
+  background: url(../img/About_color.png) no-repeat;
+  background-size: contain;
+}
+
+.Works_btn {
+  width: 80px;
+  height: 160px;
+  background: url(../img/Works_mono.png) no-repeat;
+  background-size: contain;
+}
+
+.Works_btn a {
+  width: 80px;
+  height: 160px;
+  /*
+    background: url(img/Works_mono.png) no-repeat ;
+    background-size: contain ;
+*/
+  display: block;
+}
+
+.Works_btn a:hover {
+  background: url(../img/Works_color.png) no-repeat;
+  background-size: contain;
+}
+
+.Contact_btn {
+  width: 80px;
+  height: 160px;
+  background: url(../img/Contact_mono.png) no-repeat;
+  background-size: contain;
+}
+
+.Contact_btn a {
+  width: 80px;
+  height: 160px;
+  /*
+    background-size: contain ;
+    background: url(img/Contact_mono.png) no-repeat ;
+*/
+  display: block;
+}
+
+.Contact_btn a:hover {
+  background: url(../img/Contact_color.png) no-repeat;
+  background-size: contain;
+}
+
+/*メニューボタン設定ここまで*/
+
+.news {
+  width: 1080px;
+  margin: 0 auto 200px;
+}
+
+.news .Contents-title {
+  width: 90%;
+  height: 130px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.news_box {
+  position: relative;
+  margin: 2em 0;
+  padding: 2em 2em;
+  /*文字まわりの余白*/
+  border: solid 1px #777777;
+  /*線の種類、太さ、色*/
+  border-radius: 50px;
+  /*ボックスの角のまるみ*/
+}
+
+.news_box:before,
+.news_box:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  /*ボックスの角のまるみ*/
+}
+
+.news_box:before {
+  left: 0;
+  border: solid 1px #ccc;
+  /*線の種類、太さ、色*/
+  transform: rotate(-0.7deg);
+  /*ボックスの角度*/
+}
+
+.news_box:after {
+  left: 0;
+  border: solid 1px #000;
+  /*線の種類、太さ、色*/
+  transform: rotate(0.7deg);
+  /*ボックスの角度*/
+}
+
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+  /*  margin: 30px auto;*/
+  font-size: 25px;
+}
+
+.news dt {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  /*      background:#ccc ;*/
+}
+
+.news dd {
+  width: 70%;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  /*      background:#333 ;*/
+  font-family: "Sawarabi Mincho";
+}
+
+
+.about_site {
+  width: 1080px;
+  height: 600px;
+  margin: 0 auto 200px;
+}
+
+.about_site .Contents-title {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+.about_site ul {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_ph {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px 60px 0 0;
+  border: solid 1px #000;
+  /*線の種類、太さ、色*/
+  border-radius: 50%;
+  /*ボックスの角のまるみ*/
+  background: url(../img/news_ph1.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.about_ph:before,
+.about_ph:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /*ボックスの角のまるみ*/
+}
+
+.about_ph:before {
+  width: 410px;
+  left: 10px;
+  border: solid 1px #777;
+  /*線の種類、太さ、色*/
+  transform: rotate(-0.7deg);
+  /*ボックスの角度*/
+}
+
+.about_ph:after {
+  width: 420px;
+  left: -10px;
+  border: solid 1px #ccc;
+  /*線の種類、太さ、色*/
+  transform: rotate(0.7deg);
+  /*ボックスの角度*/
+}
+
+.about_txt {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  background: none;
+  border: 1px solid #ccc;
+  /* 線の太さ・種類・色 */
+  margin: 15px 0 0 50px;
+  /* 外側の余白 上下・左右 */
+  padding: 30px;
+  /* 内側の余白 */
+  font-size: 18px;
+  font-family: "Sawarabi Mincho";
+}
+
+.about_txt:before {
+  content: 'About me';
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  background-color: #fff;
+  padding: 1px 20px;
+  /* タイトルの余白 上下・左右 */
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Cabin Sketch';
+}
+
+.about_txt:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: none;
+  border: 1px solid #777777;
+  /* 線の太さ・種類・色 */
+  content: '';
+  z-index: -1;
+}
+
+.txt_block {
+  display: block;
+  margin: 15px 0;
+  line-height: 1.3;
+}
+
+.contact h2 {
+  width: 100%;
+  height: 275px;
+  background: url(../img/footer.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+}
+
+.form {
+  background: #000;
+  padding: 30px 200px;
+
+}
+
+.form dl dt {
+  width: 40%;
+  padding: 10px 30px 0 0;
+  font-size: 20px;
+  text-align: right;
+  float: left;
+  clear: both;
+  color: #fff;
+}
+
+.form dl dd {
+  padding: 10px 0;
+}
+
+.form_title {
+  width: 100%;
+  position: relative;
+  top: 200px;
+  color: #fff;
+  background: #000;
+  font-size: 50px;
+}
+
+.form .name {
+  width: 200px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.form .email {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.form .type {
+  width: 200px;
+  height: 30px;
+}
+
+.form .message {
+  width: 400px;
+  height: 130px;
+  padding: 10px;
+}
+
+.form .required:after {
+  content: " *";
+  color: red;
+  font-size: px;
+}
+
+.form .submit_btn {
+  width: 150px;
+  height: 50px;
+  font-family: 'Cabin Sketch', "Sawarabi Mincho", cursive;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-left: 40%;
+}
+
+.form .submit_btn:hover {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.form .attention {
+  width: 500px;
+  color: #fff;
+  margin: 10px 0 50px 40%;
+  line-height: 1.5;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  background-size: cover;
+  background-position: bottom;
+  font-size: 14px;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+
+/* ▼Works.htmlの設定  */
+
+#works {
+  width: 1300px;
+  margin: 0 auto 200px;
+}
+
+.work_web {
+  margin: 100px 0;
+}
+
+.works h3 {
+  width: 100%;
+  height: 100px;
+  font-size: 50px;
+}
+
+.work_list {
+  width: 1000px;
+  display: flex;
+}
+/*
+
+.work_list dl {
+  overflow: hidden;
+  position: relative;
+}
+
+.work_list .caption {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.6);
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+  color: #fff;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.work_list dl:hover .caption {
+  opacity: 1;
+}
+*/
+
+.caption {
+  font-size: 25px;
+  font-family: "Sawarabi Mincho";
+  margin: 30px 50px 10px 10px;
+  text-align: center;
+}
+
+.caption a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.caption a:visited {
+  color: blueviolet ;
+  text-decoration: none;
+}
+
+.caption a:hover {
+  color: #3beded;
+  text-decoration: underline;
+}
+
+.caption a:active {
+  color: lightcyan;
+  text-decoration: underline;
+}
+
+
+
+
+.work_ph {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 20px 80px 0 20px;
+  border: solid 1px #000;
+  /*線の種類、太さ、色*/
+  border-radius: 50%;
+  /*ボックスの角のまるみ*/
+  background-size: cover;
+  background-position: bottom;
+}
+
+.work_ph:before,
+.work_ph:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /*ボックスの角のまるみ*/
+}
+
+.work_ph:before {
+  width: 360px;
+  left: 10px;
+  border: solid 1px #777;
+  /*線の種類、太さ、色*/
+  transform: rotate(-0.7deg);
+  /*ボックスの角度*/
+}
+
+.work_ph:after {
+  width: 370px;
+  left: -10px;
+  border: solid 1px #ccc;
+  /*線の種類、太さ、色*/
+  transform: rotate(0.7deg);
+  /*ボックスの角度*/
+}
+
+.neko-marche {
+  background: url(../img/work_neko.png);
+  background-position: top;
+}
+
+.cafe {
+  background: url(../img/work_cafe.png);
+  background-position: top;
+}
+
+.wanowa1 {
+  background: url(../img/work_wanowa1.jpeg);
+  background-position: top;
+}
+
+.wanowa2 {
+  background: url(../img/work_wanowa2.png);
+  background-position: top;
+}
+
+.wanowa3 {
+  background: url(../img/work_wanowa3-1.png);
+  background-position: top;
+}
+
+.kamen {
+  background: url(../img/work_mask.png);
+  background-position: botto;
+}
+
+.hanahuda {
+  background: url(../img/work_hanahuda.jpg);
+  background-position: top;
+}
+
+.game_chara {
+  background: url(../img/work_game.png);
+}
+
+
+/* 雨 */
+
+.rain {
+  position: fixed;
+  top: -5%;
+  /*　雨の大きさ　*/
+  font-size: 25px;
+  /* 雨の色 */
+  color: #e3e3e3;
+  /* 雨 */
+  text-shadow: 5vw -200px 0,
+  10vw -400px 0,
+  20vw -500px 0,
+  30vw -580px 0,
+  39vw -250px 0,
+  42vw -340px 0,
+  56vw -150px 0,
+  63vw -180px 0,
+  78vw -220px 0,
+  86vw -320px 0,
+  94vw -170px 0;
+  z-index: 1;
+  animation: rain_anim 2.8s linear infinite;
+}
+
+/* 波紋 */
+
+.ripple {
+  position: fixed;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  box-shadow: 0 0 3px 1px white;
+  transform: perspective(500px) rotateX(80deg);
+}
+
+.ripples .ripple:nth-child(1) {
+  left: 10vw;
+  animation: ripple_anim 2s 4s linear infinite;
+}
+
+.ripples .ripple:nth-child(2) {
+  left: 40vw;
+  animation: ripple_anim 3s 4.8s linear infinite;
+}
+
+.ripples .ripple:nth-child(3) {
+  left: 70vw;
+  animation: ripple_anim 4s 6.5s linear infinite;
+}
+
+/* アニメーション */
+
+@keyframes rain_anim {
+  60% {
+    top: 80%;
+  }
+  100% {
+    top: 150%;
+    color: transparent;
+  }
+}
+
+@keyframes ripple_anim {
+  0% {
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    transform: perspective(500px) scale(4) rotateX(80deg);
+    box-shadow: none;
+  }
+}
+
+
+/* 共通の設定 */
+
+ul {
+  list-style-type: none;
+}

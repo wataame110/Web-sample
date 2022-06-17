@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gamochanのさくひん</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./ress.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lyx6iqj.css">
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'pev8pym',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.nicescroll.js"></script>
+    <script src="init.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav id="nav" class="">
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#licenses">資格</a></li>
+                <li><a href="#works">作ったもの</a></li>
+            </ul>
+            <span class="ue"></span>
+            <span class="sita"></span>
+            <span class="left"></span>
+            <span class="right"></span>
+        </nav>
+    </header>
+    <main>
+        <section id="top">
+            <h1>SOTSUTEN<br>NO<br>HEKIREKI</h1>
+        </section>
+
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>
+                蒲生博崇。22歳。<br>
+                Webサイトの作り方及びWebデザインを学ぶべく、<br>東京工学院専門学校Webクリエーター科に入学。<br>
+                面白いと感じたものは勧んで試し、PHP・JSを用いてWebツールを開発することが得意。<br>
+                学校で自分が実践したことはデザインよりWebプログラミングのほうが多かったかもしれない。<br>
+                これからはデザイン方面を広く学びたい。<br>
+                趣味：絵を描く、バイクに乗る。<br>
+            </p>
+            <figure class="bike">
+                <img src="./img/IMG_3250.JPG" alt="">
+            </figure>
+        </section>
+
+        <section id="licenses">
+            <h2>Licenses</h2>
+            <article class="cg-arts_web">
+                <figure>
+                    <img src="./img/cgartsWeb.jpg" alt="">
+                </figure>
+                <p>CG-ARTS Webデザイナー検定<br>エキスパート級</p>
+            </article>
+        </section>
+
+        <section id="works">
+            <h2>Works</h2>
+            <article id="works_wrap">
+                <article>
+                    <a href="https://gamo9620.github.io/GitWork/EC/" target="_blank">
+                        <figure>
+                            <img src="https://gamo9620.github.io/GitWork/EC/thumbnail.PNG" alt="">
+                        </figure>
+                        <p style="font-size: .9rem">Bikers the motorbikes line up</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://gamo9620.github.io/GitWork/Flexbox/" target="_blank">
+                        <figure><img src="https://gamo9620.github.io/GitWork/Flexbox/thumbnail.PNG" alt="">
+                        </figure>
+                        <p>Coffee Style</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="https://www.foriio.com/works/7467" target="_blank">
+                        <figure>
+                            <img src="./img/bannar_thum3.webp" alt="">
+                        </figure>
+                        <p>
+                            バナー制作
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a href="http://technosweb.com/wanowa/" 　target="_blank">
+                        <figure style="filter: drop-shadow(0 0 0 #0000)">
+                            <img src="./img/wp_dev.png" alt="">
+                        </figure>
+                        <p>
+                            WordPressカスタマイズ<br>イベント日程を書き込める
+                        </p>
+                    </a>
+                </article>
+                <article>
+                    <a href="./contents/Fly/index.html" 　target="_blank">
+                        <figure style="filter: drop-shadow(0 0 5px #0001);">
+                            <img src="./img/top.png" alt="" style="height: 70%;padding-top: 5vw;">
+                        </figure>
+                        <p>ツール開発　画面上部に飛ぶ</p>
+                    </a>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer style="height: 20vh"></footer>
+    <div id="back_to_top" class="">
+        <a href="#">
+            <svg version="1.1" id="toTopMk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" style="fill:rgb(100,100,100)">
+                <g>
+                    <path class=" st0" d="M256,0C114.616,0,0,114.624,0,256c0,141.391,114.616,256,256,256s256-114.609,256-256
+		C512,114.624,397.384,0,256,0z M360.768,279.819c-2.55,3.623-7.036,5.333-11.348,4.333l-46.623-10.899v89.334
+		c0,8.652-7.014,15.681-15.681,15.681h-62.232c-8.666,0-15.68-7.029-15.68-15.681v-89.334l-46.623,10.899
+		c-4.312,1-8.798-0.71-11.348-4.333c-2.551-3.608-2.638-8.421-0.24-12.131l95.224-131.913c2.276-3.145,5.913-5,9.783-5
+		c3.87,0,7.514,1.855,9.783,5l95.231,131.913C363.413,271.398,363.319,276.211,360.768,279.819z"></path>
+                </g>
+            </svg>
+        </a>
+    </div>
+    <script src="./common.js"></script>
+</body>
+
+</html>

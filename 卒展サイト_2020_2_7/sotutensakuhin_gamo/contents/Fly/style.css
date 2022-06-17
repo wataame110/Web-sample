@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+
+input[type="text"] {
+    margin: 10px;
+}
+
+#toTop {
+    display: none;
+}
+
+#toTop > a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.35s ease;
+}
+
+#toTop > a :hover {
+    opacity: 0.9;
+    animation: tthover 1s infinite;
+}
+
+#toTop > a > svg {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes tthover {
+    0% {
+        transform: translate(0, 0px)
+    }
+
+    25% {
+        transform: translate(0, 3px)
+    }
+
+    50% {
+        transform: translate(0, 0px)
+    }
+
+    75% {
+        transform: translate(0, -3px)
+    }
+
+    100% {
+        transform: translate(0, 0px)
+    }
+}
+
+@media (max-width:768px) {
+    #toTop {
+        max-height: 60px;
+        max-width: 60px;
+        width: 10vw;
+        height: 10vw;
+        position: fixed;
+        bottom: 3vw;
+        right: 3vw;
+    }
+
+    #toTop > a {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    #toTop {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        bottom: 3vw;
+        right: 3vw;
+    }
+
+    #toTop > a {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+@media (min-width:1024px) {
+    #toTop {
+        width: 70px;
+        height 70px;
+        position: fixed;
+        bottom: 50px;
+        right: calc(50vw - 500px);
+    }
+
+    #toTop > a {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+
+/* --------------
+## property
+-------------- */
+
+#property {
+    float: right;
+    position: fixed;
+    top: -11px;
+    left: calc(50vw - 13px);
+}
+
+#smx {
+    float: right;
+    position: fixed;
+    top: 10px;
+    left: 50vw;
+}
+
+#scr {
+    float: right;
+    position: fixed;
+    top: 30px;
+    left: 50vw;
+}
+
+#sPm {
+    float: right;
+    position: fixed;
+    top: 50px;
+    left: 50vw;
+}
+
+#scrVal {
+    float: right;
+    position: fixed;
+    top: 70px;
+    left: 50vw;
+}

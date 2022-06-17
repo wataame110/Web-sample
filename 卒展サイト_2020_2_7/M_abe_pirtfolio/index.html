@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <!-- header ------------------------------------------------>
+        <p class="header_fune"><img src="images/kapibara.png"></p>
+
+        <p class="header_shima"><img src="images/shima.png"></p>
+        <!-- header ------------------------------------------------>
+    </header>
+
+    <main class="main">
+        <ul class="nav">
+            <li><a href="#east" class="btn">Click Start!</a></li>
+        </ul>
+        <section class="portfolio-item" id="poster">
+            <p class="adobe_img"><img src="images/adobe_img.png" width="228" height="303" alt=""></p>
+            <p class="adobe_text"><img src="images/adobe_text.png" width="360" height="54" alt=""></p>
+            <p class="Photoshop"><img src="images/Photoshop.png" width="79" height="72" alt=""></p>
+            <p class="fukidashi"><img src="images/fukidashi.png" width="462" height="359" alt=""></p>
+            <p class="tatunoko"><img src="images/tatunoko.png" width="266" height="192" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+        <section class="portfolio-item" id="cafe">
+            <p class="rogo_img"><img src="images/rogo_img.png" width="501" height="286" alt=""></p>
+            <p class="rogo_text"><img src="images/rogo_text.png" width="310" height="84" alt=""></p>
+            <p class="Photoshop"><img src="images/Photoshop.png" width="79" height="72" alt=""></p>
+            <p class="fukidashi"><img src="images/fukidashi.png" width="462" height="359" alt=""></p>
+            <p class="kujira"><img src="images/kujira.png" width="542" height="224" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+        <section class="portfolio-item" id="banner">
+            <p class="banner_img"><img src="images/banner_img.png" width="514" height="290" alt=""></p>
+            <p class="banner_text"><img src="images/banner_text.png" width="382" height="54" alt=""></p>
+            <p class="Photoshop"><img src="images/Photoshop.png" width="79" height="72" alt=""></p>
+            <p class="fukidashi"><img src="images/fukidashi.png" width="462" height="359" alt=""></p>
+            <p class="jyugon2"><img src="images/jyugon2.png" width="223" height="127" alt=""></p>
+            <p class="jyugon1"><img src="images/jyugon1.png" width="232" height="103" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+
+
+        <section class="portfolio-item" id="illust">
+            <p class="kukei_img"><img src="images/kukei_img.png" width="217" height="306" alt=""></p>
+            <p class="kukei_text"><img src="images/kukei_text.png" width="368" height="53" alt=""></p>
+            <p class="illustrator"><img src="images/illustrator.png" width="78" height="72" alt=""></p>
+            <p class="fukidashi"><img src="images/fukidashi.png" width="462" height="359" alt=""></p>
+            <p class="kurage2"><img src="images/kurage2.png" width="99" height="100" alt=""></p>
+            <p class="kurage1"><img src="images/kurage1.png" width="168" height="170" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+
+        <section class="portfolio-item" id="wine">
+            <p class="label_img"><img src="images/label_img.png" width="243" height="280" alt=""></p>
+            <p class="label_text"><img src="images/label_text.png" width="391" height="84" alt=""></p>
+            <p class="illustrator"><img src="images/illustrator.png" width="78" height="72" alt=""></p>
+            <p class="fukidashi"><img src="images/fukidashi.png" width="462" height="359" alt=""></p>
+            <p class="kame3"><img src="images/kame3.png" width="91" height="58" alt=""></p>
+            <p class="kame2"><img src="images/kame2.png" width="91" height="58" alt=""></p>
+            <p class="kame1"><img src="images/kame1.png" width="161" height="102" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+        <section class="portfolio-item" id="goal">
+            <p class="gool"><img src="images/gool.png" width="536" height="264" alt=""></p>
+            <p class="kujira_goal" id="kgoal"><img src="images/kujira.png" width="542" height="224" alt=""></p>
+            <p class="jyugonn"><img src="images/jyugonn.png" width="223" height="127" alt=""></p>
+            <p class="goal_tatunoko"><img src="images/tatunoko.png" width="260" height="192" alt=""></p>
+            <p class="goal_kurage1"><img src="images/kurage1.png" width="99" height="100" alt=""></p>
+            <p class="goal_kame3"><img src="images/kame3.png" width="91" height="58" alt=""></p>
+            <p class="goal_kame2"><img src="images/kame2.png" width="91" height="58" alt=""></p>
+            <p class="goal_kame1"><img src="images/kame1.png" width="161" height="102" alt=""></p>
+            <p class="fune"><img src="images/fune.png" width="662" height="616" alt=""></p>
+        </section>
+        <p id="east">a</p>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.scrollParallax.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        $(function() {
+            $('ul.nav a').bind('click', function(event) {
+                var $anchor = $(this);
+                console.log($anchor);
+                /*
+                if you want to use one of the easing effects:
+                $('html, body').stop().animate({
+                    scrollLeft: $($anchor.attr('href')).offset().left
+                }, 1500,'easeInOutExpo');
+                 */
+                $('html, body').stop().animate({
+                    scrollLeft: $($anchor.attr('href')).offset().left
+                }, 40000, 'linear');
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

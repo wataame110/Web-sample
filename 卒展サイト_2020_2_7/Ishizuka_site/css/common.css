@@ -1,0 +1,248 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+header {
+	height: 738px;
+	max-height: 738px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 10rem;
+	position: absolute;
+	top: 40%;
+	left: 39%;
+	font-family: 'Dancing Script', cursive;
+}
+
+.list-title {
+	font-family: 'Poiret One', cursive;
+	font-family: 'Dancing Script', cursive;
+	font-size: 5rem;
+	color: #666666;
+	margin: 2em 1em;
+}
+
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.item-title {
+	font-size: 2rem;
+	margin: 1em 0;
+	margin-left: 0.3em;
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: lighter;
+}
+
+.item-description {
+	font-size: 1.5rem;
+	margin-left: 0.5em;
+	font-family: 'M PLUS 1p', sans-serif;
+}
+
+.work-list {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.item-box {
+	width: 30%;
+	padding: 1em;
+	list-style: none;
+	margin-bottom: 5em;
+	box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+	border-radius: 20px;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+.item-box:hover {
+	box-shadow: 0 0 2rem rgba(0, 0, 255, 0.7);
+}
+
+.thumbnail {
+	height: 300px;
+	max-height: 300px;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+/*サムネイル*/
+.part1 {
+	background-image: url("../images/happy.jpg");
+}
+
+.part2 {
+	background-image: url("../images/airbnb.jpg");
+	background-size: cover;
+}
+
+.part3 {
+	background-image: url("../images/kantan.jpg");
+	background-position: center;
+
+}
+
+.part4 {
+	background-image: url("../images/parsol_top.jpg");
+	background-size: contain;
+	background-position: center;
+}
+
+.part5 {
+	background-image: url("../images/prax-thu.jpg");
+	background-position: center;
+}
+
+.part6 {
+	background-image: url("../images/ec.jpg");
+}
+
+.part7 {
+	background-image: url("../images/bana.jpg");
+	background-size: cover;
+}
+
+.part8 {
+	background-image: url("../images/bana(2).jpg");
+	background-size: cover;
+
+}
+
+.part9 {
+	background-image: url("../images/bana(3).jpg");
+	background-size: auto;
+}
+
+.part10 {
+	background-image: url("../images/adobe_poster.jpg");
+	background-size: cover;
+	background-position: inherit;
+}
+
+.part11 {
+	background-image: url("../images/tissue.jpg");
+	background-size: contain;
+
+}
+
+.part12 {
+	background-image: url("../images/movie_poster.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+footer {
+	width: 100%;
+	max-width: 1280px;
+	margin-top: 2em;
+	height: 100px;
+	position: relative;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	left: 41%;
+	top: 45%;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width:1024px) {
+	h1 {
+		font-size: 22vw;
+		top: 40%;
+		left: 23%;
+	}
+
+	.item-box {
+		width: 45%;
+	}
+
+	.item-title {
+		margin: 0.5em 0;
+	}
+
+	.item-description {
+		margin-left: 0;
+	}
+
+	.copyright {
+		top: 20%;
+		left: 35%;
+	}
+
+}
+
+
+@media screen and (max-width:768px) {
+	h1 {
+		font-size: 22vw;
+		top: 40%;
+		left: 24%;
+
+	}
+}
+
+@media screen and (max-width:640px) {
+	header {
+		height: 630px;
+	}
+
+	h1 {
+		font-size: 22vw;
+		top: 40%;
+		left: 22%;
+	}
+
+	.list-title {
+		font-size: 3em;
+		margin: 1em 0.6em;
+	}
+
+	.item-box {
+		width: 100%;
+	}
+
+	.copyright {
+		left: 20%;
+	}
+}

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+}
+
+.grid_container {
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    grid-template-areas:
+        "l l . ."
+        "l l r r"
+        ". . r r";
+}
+
+.container {
+    position: relative;
+}
+
+.container:nth-child(2n-1) {
+    grid-area: l;
+}
+
+.container:nth-child(2n) {
+    grid-area: r;
+}
+
+.container h2 {
+    margin: 0;
+    position: absolute;
+    top: -35px;
+    left: calc(50vw*0.12);
+    z-index: 11;
+    font-size: 2.5em;
+    filter: drop-shadow(5px 5px 5px #3335);
+}
+
+.container .nakami {
+    background: #fff;
+    width: 80%;
+    height: 90%;
+    filter: drop-shadow(5px 5px 10px #333);
+    margin: 0 auto;
+    z-index: 10
+}
+
+.container p {
+    position: absolute;
+    bottom: 0;
+    right: calc(50vw*0.05);
+    width: 60%;
+    height: 50px;
+    font-size: .8em;
+    background: #fa3;
+    z-index: 11;
+    padding: 10px 10px 15px;
+    filter: drop-shadow(5px 5px 5px #3335);
+}
+
+.obj {
+    opacity: 0;
+    transition: all .5s ease;
+    /*    transform: translate(0, 100px);*/
+}
+
+.obj.show {
+    opacity: 1;
+    transform: none;
+}
+
+.obj--lr {
+    transform: translate(-100px, 0);
+}
+
+.obj--rl {
+    transform: translate(100px, 0);
+}
+
+.obj--up {
+    transform: translate(0, 100px);
+}
+
+.obj--down {
+    transform: translate(0, -100px);
+}
+
+.obj--scaleUp {
+    transform: scale(.5);
+}
+
+.obj--scaleDown {
+    transform: scale(1.5);
+}
+
+.obj--rotateL {
+    transform: rotate(180deg);
+}
+
+.obj--rotateR {
+    transform: rotate(-180deg);
+}
